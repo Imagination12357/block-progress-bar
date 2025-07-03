@@ -5,6 +5,7 @@ def clip(n, a, b):
     return min(max(n,a),b) if a<=b else min(max(n,b),a)
 
 #TODO: Docstring, README
+#TODO: Customizing position or hiding of current/max and direction of progress bar
 class ProgressBar():
     def __init__(self, now_value:float=0, max_value:float=1, char:int=10, do_clip:bool=True, space:str=' '):
         self.string_table={
